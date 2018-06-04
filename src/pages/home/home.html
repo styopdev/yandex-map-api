@@ -1,0 +1,26 @@
+<angucomplete-alt id="ex1"
+    placeholder="Start point"
+    pause="100"
+    selected-object="vm.startPoint"
+    remote-url="https://geocode-maps.yandex.ru/1.x/?format=json&geocode="
+    remote-url-response-formatter="vm.responseFormatter"
+    search-fields="name"
+    title-field="name"
+    input-changed="vm.inputChanged()"
+    minlength="1"
+    input-class="form-control form-control-small"/></angucomplete-alt>
+
+
+<angucomplete-alt id="ex2"
+    placeholder="End point"
+    pause="100"
+    selected-object="vm.endPoint"
+    remote-url="https://geocode-maps.yandex.ru/1.x/?format=json&geocode="
+    remote-url-response-formatter="vm.responseFormatter"
+    search-fields="name"
+    title-field="name"
+    input-changed="vm.inputChanged()"
+    minlength="1"
+    input-class="form-control form-control-small"/></angucomplete-alt>
+
+<div id="map" style="width: 600px; height: 400px; margin-top: 20px"></div>
