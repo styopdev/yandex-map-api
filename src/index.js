@@ -1,8 +1,7 @@
 // Import third party libraries
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
-import ngRedux from 'ng-redux';
-import ngReduxUiRouter from 'redux-ui-router';
+
 import ngAnimate from 'angular-animate';
 import ngMessages from 'angular-messages';
 import bootstrap from 'angular-ui-bootstrap';
@@ -43,8 +42,5 @@ app.config(['$locationProvider', ($locationProvider) => {
 
 // Load config for ui-router
 app.config(routeConfig(app));
-
-// Load Redux config
-app.config(reduxConfig);
 
 export default app;
